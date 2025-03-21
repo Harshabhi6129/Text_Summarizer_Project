@@ -1,27 +1,20 @@
 import setuptools
 
-with open('README.md', 'r', encoding='utf-8') as f:
+with open("README.md", "r", encoding="utf-8") as f:
     long_description = f.read()
-    
-__version__ = '0.0.0'
-REPO_NAME = 'Text_Summarizer_Project'
-AUTHOR_USER_NAME = 'Harshabhi6129'
-SRC_REPO = 'TextSummarizer'
-AUTHOR_EMAIL = 'harshakusampudi@gmail.com'
 
 setuptools.setup(
-    name=SRC_REPO,
-    version=__version__,
-    author=AUTHOR_USER_NAME,
-    author_email=AUTHOR_EMAIL,
+    name="TextSummarizer",
+    version="0.0.1",
+    author="Harshabhi6129",
+    author_email="harshakusampudi@gmail.com",
     description="A small python package for NLP app",
     long_description=long_description,
-    long_description_content="text/markdown",
-    url=f"https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}",
+    long_description_content_type="text/markdown",
+    url="https://github.com/Harshabhi6129/Text_Summarizer_Project",
     project_urls={
-        "Bug Tracker": f"https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}/issues",
+        "Bug Tracker": "https://github.com/Harshabhi6129/Text_Summarizer_Project/issues",
     },
-    package_dir={"": "src"},
-    packages=setuptools.find_packages(where="src")
+    package_dir={"": "src"},  # Ensure package structure is correct
+    packages=setuptools.find_packages(where="src"),
 )
-
